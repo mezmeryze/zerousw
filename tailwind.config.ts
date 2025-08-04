@@ -52,10 +52,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Fashion-specific colors
-				'luxury-gold': 'hsl(var(--luxury-gold))',
-				'fashion-gray': 'hsl(var(--fashion-gray))',
-				'elegant-border': 'hsl(var(--elegant-border))',
+				// Minimal grayscale palette
+				'gray-50': 'hsl(var(--gray-50))',
+				'gray-100': 'hsl(var(--gray-100))',
+				'gray-200': 'hsl(var(--gray-200))',
+				'gray-300': 'hsl(var(--gray-300))',
+				'gray-400': 'hsl(var(--gray-400))',
+				'gray-500': 'hsl(var(--gray-500))',
+				'gray-600': 'hsl(var(--gray-600))',
+				'gray-700': 'hsl(var(--gray-700))',
+				'gray-800': 'hsl(var(--gray-800))',
+				'gray-900': 'hsl(var(--gray-900))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -111,13 +118,11 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)',
-				'gradient-accent': 'var(--gradient-accent)'
+				'gradient-card': 'var(--gradient-card)'
 			},
 			boxShadow: {
-				'elegant': 'var(--shadow-elegant)',
-				'card-hover': 'var(--shadow-card)',
-				'luxury': 'var(--shadow-luxury)'
+				'minimal': 'var(--shadow-minimal)',
+				'card-hover': 'var(--shadow-card)'
 			}
 		}
 	},

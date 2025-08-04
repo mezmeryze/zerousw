@@ -21,7 +21,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-elegant-border">
+    <Card className="group hover:shadow-card-hover transition-all duration-300 bg-gradient-card border-gray-200">
       <CardContent className="p-0">
         <div className="relative overflow-hidden rounded-t-lg">
           <img 
@@ -30,14 +30,14 @@ const ProductCard = ({ product }: ProductCardProps) => {
             className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute top-4 left-4">
-            <Badge variant={product.available ? "default" : "secondary"} className="bg-luxury-gold text-accent-foreground">
+            <Badge variant={product.available ? "default" : "secondary"}>
               {product.available ? "Available" : "Sold"}
             </Badge>
           </div>
           <Button 
             variant="ghost" 
             size="icon" 
-            className="absolute top-4 right-4 bg-white/80 hover:bg-white text-fashion-gray hover:text-luxury-gold transition-colors"
+            className="absolute top-4 right-4 bg-white/90 hover:bg-white text-gray-600 hover:text-primary transition-colors"
           >
             <Heart className="h-4 w-4" />
           </Button>
@@ -48,7 +48,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             <h3 className="font-semibold text-primary text-lg leading-tight">{product.name}</h3>
           </div>
           
-          <p className="text-fashion-gray text-sm mb-2">{product.brand}</p>
+          <p className="text-gray-600 text-sm mb-2">{product.brand}</p>
           
           <div className="flex items-center gap-2 mb-3">
             <span className="text-sm text-muted-foreground">Size: {product.size}</span>
@@ -67,7 +67,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             <Button 
               variant="outline" 
               size="sm" 
-              className="hover:bg-luxury-gold hover:border-luxury-gold hover:text-accent-foreground transition-colors"
+              className="hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               <ExternalLink className="h-4 w-4 mr-1" />
               View

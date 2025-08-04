@@ -6,25 +6,25 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-elegant-border">
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-gray-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold text-primary tracking-tight">
-              ZERO<span className="text-luxury-gold">USW</span>
+              ZEROUSW
             </h1>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#featured" className="text-fashion-gray hover:text-primary transition-colors">
+            <a href="#featured" className="text-gray-600 hover:text-primary transition-colors">
               Featured
             </a>
-            <a href="#about" className="text-fashion-gray hover:text-primary transition-colors">
+            <a href="#about" className="text-gray-600 hover:text-primary transition-colors">
               About
             </a>
-            <a href="#contact" className="text-fashion-gray hover:text-primary transition-colors">
+            <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">
               Contact
             </a>
           </nav>
@@ -70,25 +70,25 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-background border-t border-elegant-border">
+        <div className="md:hidden bg-background border-t border-gray-200">
           <div className="px-4 pt-2 pb-3 space-y-1">
             <a
               href="#featured"
-              className="block px-3 py-2 text-fashion-gray hover:text-primary transition-colors"
+              className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Featured
             </a>
             <a
               href="#about"
-              className="block px-3 py-2 text-fashion-gray hover:text-primary transition-colors"
+              className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </a>
             <a
               href="#contact"
-              className="block px-3 py-2 text-fashion-gray hover:text-primary transition-colors"
+              className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
