@@ -6,39 +6,38 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-gray-200">
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary tracking-tight">
+            <h1 className="text-xl font-medium text-primary tracking-wide">
               ZEROUSW
             </h1>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#featured" className="text-gray-600 hover:text-primary transition-colors">
-              Featured
+          <nav className="hidden md:flex items-center space-x-12">
+            <a href="#featured" className="text-gray-500 hover:text-primary transition-colors text-sm font-medium">
+              Collection
             </a>
-            <a href="#about" className="text-gray-600 hover:text-primary transition-colors">
+            <a href="#about" className="text-gray-500 hover:text-primary transition-colors text-sm font-medium">
               About
             </a>
-            <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">
+            <a href="#contact" className="text-gray-500 hover:text-primary transition-colors text-sm font-medium">
               Contact
             </a>
           </nav>
 
           {/* Social Links */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-6">
             <Button variant="ghost" size="sm" asChild>
               <a 
                 href="https://instagram.com/shouldbezerousw" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2"
+                className="text-gray-500 hover:text-primary transition-colors text-sm font-medium"
               >
-                <Instagram className="h-4 w-4" />
                 Instagram
               </a>
             </Button>
@@ -47,9 +46,8 @@ const Header = () => {
                 href="https://grailed.com/zerousw" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2"
+                className="text-gray-500 hover:text-primary transition-colors text-sm font-medium"
               >
-                <ExternalLink className="h-4 w-4" />
                 Grailed
               </a>
             </Button>

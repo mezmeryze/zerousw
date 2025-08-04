@@ -41,18 +41,18 @@ const featuredProducts = [
 
 const FeaturedItems = () => {
   return (
-    <section id="featured" className="py-20 bg-background">
+    <section id="featured" className="py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Featured
+        <div className="text-center mb-24 animate-slide-up">
+          <h2 className="text-4xl md:text-5xl font-light text-primary mb-8 tracking-tight">
+            Collection
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-light">
-            Handpicked designer pieces from luxury brands
+          <p className="text-lg text-gray-500 max-w-md mx-auto font-light leading-relaxed">
+            Handpicked designer pieces
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {featuredProducts.map((product, index) => (
             <div 
               key={product.id} 
@@ -64,18 +64,18 @@ const FeaturedItems = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-6 font-light">
-            View complete collection on Grailed
+        <div className="text-center mt-24">
+          <p className="text-gray-500 mb-8 font-light">
+            View complete collection
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <a 
               href="https://grailed.com/zerousw" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block"
             >
-              <button className="bg-primary text-primary-foreground hover:bg-gray-800 px-8 py-3 rounded-md font-medium transition-colors">
+              <button className="bg-primary text-primary-foreground hover:bg-gray-800 px-8 py-3 rounded text-sm font-medium transition-colors">
                 View on Grailed
               </button>
             </a>
